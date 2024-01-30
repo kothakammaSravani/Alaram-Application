@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reminder Application</title>
+  <link rel="stylesheet" href="flutter.css">
+</head>
+<body>
+
+  <h2>Reminder Application</h2>
+
+  <form id="alarmForm">
+
+    <label for="time">Time:</label>
+    <input type="time" id="time" required><br>
+
+    <label for="activity">Select Activity:</label>
+    <select id="activity" required>
+      <option value="WakeUp">Wake up</option>
+      <option value="GoToGym">Go to gym</option>
+      <option value="Breakfast">Breakfast</option>
+      <option value="Meetings">Meetings</option>
+      <option value="Lunch">Lunch</option>
+      <option value="QuickNap">Quick nap</option>
+      <option value="GoToLibrary">Go to library</option>
+      <option value="Dinner">Dinner</option>
+    </select><br>
+
+    <button type="button" onclick="setDailyAlarm()">Set Daily Reminder</button>
+  </form>
+
+  <p id="message"></p>
+  
+  <script src="script.js"></script>
+</body>
+</html>
